@@ -1,678 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Coming Soon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #050905;
+      --panel: #0b140b;
+      --line: #173317;
+      --text: #96ff96;
+      --text-dim: #5abf5a;
+      --glow: rgba(120, 255, 120, 0.18);
+    }
 
-		<!--==================== UNICONS ====================-->
-		<link
-		rel="stylesheet"
-		href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-		/>
-		
-		<!--==================== FAVICON ====================-->
-		<link rel="icon" href="./assets/img/favicon.svg">
-		<!--==================== CSS ====================-->
-		<link rel="stylesheet" href="./assets/css/styles.css" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Paramjot Singh</title>
-	</head>
-	<body>
-		<!--==================== HEADER ====================-->
-		<header class="header" id="header">
-			<nav class="nav container">
-				<a href="#" class="nav__logo">param373r</a>
-				<div class="nav__menu" id="nav-menu">
-					<ul class="nav__list grid">
-						<li class="nav__item">
-							<a href="#home" class="nav__link">
-								<i class="uil uil-estate nav__icon"></i>Home
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#about" class="nav__link">
-								<i class="uil uil-user nav__icon"></i>About
-							</a>
-						</li>
-						<li class="nav__item">
-							<a href="#skills" class="nav__link">
-								<i class="uil uil-file-alt nav__icon"></i>Skills
-							</a>
-						</li>
-						<!-- <li class="nav__item">
-							<a href="#portfolio" class="nav__link">
-								<i class="uil uil-scenery nav__icon"></i>Portfolio
-							</a>
-						</li> -->
-						<li class="nav__item">
-							<a href="#contact" class="nav__link">
-								<i class="uil uil-message nav__icon"></i>Contact
-							</a>
-						</li>
-					</ul>
-					<i class="uil uil-times nav__close" id="nav-close"></i>
-				</div>
-				<div class="nav__btns">
-					<!-- Theme change button -->
-					<i class="uil uil-moon change-theme" id="theme-button"></i>
-					<div class="nav__toggle" id="nav-toggle">
-						<i class="uil uil-apps"></i>
-					</div>
-				</div>
-			</nav>
-		</header>
+    * {
+      box-sizing: border-box;
+    }
 
-		<!--==================== MAIN ====================-->
-		<main class="main">
-			<!--==================== HOME ====================-->
-			<section class="home section" id="home">
-				<div class="home__container container grid">
-					<div class="home__content grid">
-						<div class="home__social">
-							<a
-								href="https://github.com/param373r"
-								taget="_blank"
-								class="home__social-icon"
-							>
-								<i class="uil uil-github"></i>
-							</a>
-							<a
-								href="https://medium.com/@param373r"
-								taget="_blank"
-								class="home__social-icon"
-							>
-								<i class="uil uil-medium-m"></i>
-							</a>
-							<a
-								href="https://hashnode.com/"
-								taget="_blank"
-								class="home__social-icon"
-							>
-							<svg viewBox="0 0 337 337" fill="none">
-								<rect x="113" y="113" width="111" height="111" rx="55.5"/>
-								<path class='home__social-icon' fill-rule="evenodd" clip-rule="evenodd" d="M23.155 112.598c-30.873 30.874-30.873 80.93 0 111.804l89.443 89.443c30.874 30.873 80.93 30.873 111.804 0l89.443-89.443c30.873-30.874 30.873-80.93 0-111.804l-89.443-89.443c-30.874-30.873-80.93-30.873-111.804 0l-89.443 89.443zm184.476 95.033c21.612-21.611 21.612-56.651 0-78.262-21.611-21.612-56.651-21.612-78.262 0-21.612 21.611-21.612 56.651 0 78.262 21.611 21.612 56.651 21.612 78.262 0z" fill='hsl(50, 69%, 61%)'/>
-								</svg>
-							</a>
-						</div>
-						<div class="home__img">
-							<svg
-								class="home__blob"
-								viewBox="0 0 200 187"
-								xmlns="http://www.w3.org/2000/svg"
-								xmlns:xlink="http://www.w3.org/1999/xlink"
-							>
-								<mask id="mask0" mask-type="alpha">
-									<path
-										d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-									/>
-								</mask>
-								<g mask="url(#mask0)">
-									<path
-										d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
-									/>
-									<image
-										class="home__blob-img"
-										x="10"
-										y="16"
-										href="assets/img/home-profile-pic.png"
-									/>
-								</g>
-							</svg>
-						</div>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: clamp(12px, 4vw, 24px);
+      background:
+        radial-gradient(circle at 50% -10%, rgba(70, 180, 70, 0.12), transparent 45%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Inter", "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
 
-						<div class="home__data">
-							<h1 class="home__title">Hi, Myself param373r</h1>
-							<h3 class="home__subtitle">Frontend developer | UI Researcher</h3>
-							<p class="home__description">
-                                I am a Front-end Developer and an aspiring UI researcher. I have been developing websites for about 2+ years now. </p>
-							<a href="#contact" class="button botton--flex">
-								Contact Me <i class="uil uil-message button__icon"></i>
-							</a>
-						</div>
-					</div>
-					<div class="home__scroll">
-						<a href="#about" class="home__scroll-button button--flex">
-							<i class="uil uil-mouse-alt home__scroll-mouse"></i>
-							<span class="home__scroll-name">Scroll down</span>
-							<i class="uil uil-arrow-down home__scroll-arrow"></i>
-						</a>
-					</div>
-				</div>
-			</section>
+    .terminal {
+      width: min(720px, 100%);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(9, 18, 9, 0.95) 0%, rgba(6, 12, 6, 0.95) 100%);
+      box-shadow:
+        0 24px 80px rgba(0, 0, 0, 0.55),
+        0 0 50px var(--glow);
+      overflow: hidden;
+    }
 
-			<!--==================== ABOUT ====================-->
-			<section class="about section" id="about">
-				<h2 class="section__title">About Me</h2>
-				<space class="section__subtitle">My introduction</space>
+    .terminal__bar {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(14, 24, 14, 0.7);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
 
-				<div class="about__container container grid">
-					<img src="assets/img/about-picture.jpg" alt="" class="about__img" />
-					<div class="about__data">
-						<p class="about__description">
-							Other than being a developer I also like playing games, swimming and writing <span class="other-links">#Marvel</span> fiction. I also blog about my work on <a class="other-links" href="https://param373r.medium.com/">Medium</a> sometimes. Lately, I have also been working on starting a podcast for the developer community named "The Developer Diaries". Stay tuned<span> 🔥🔥 </span>...
-						</p>
-						<div class="about__info">
-							<div>
-								<span class="about__info-title">2+</span>
-								<span class="about__info-name"
-									>Years <br />
-									experience</span
-								>
-							</div>
-							<div>
-								<span class="about__info-title">10+</span>
-								<span class="about__info-name"
-									>Completed <br />
-									projects</span
-								>
-							</div>
-							<div>
-								<span class="about__info-title">30+</span>
-								<span class="about__info-name"
-									>Blogs <br />
-									published</span
-								>
-							</div>
-						</div>
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: #2c5f2c;
+      box-shadow: 0 0 6px rgba(100, 255, 100, 0.25);
+    }
 
-						<div class="about__buttons">
-							<a
-								href="#"
-								class="button button--flex"
-							>
-								Download CV<i class="uil uil-download-alt button__icon"> </i>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
+    .terminal__body {
+      padding: clamp(18px, 4vw, 26px) clamp(16px, 4vw, 24px);
+      min-height: clamp(150px, 30vh, 190px);
+      font-family: "Roboto Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      letter-spacing: 0.01em;
+    }
 
-			<!--==================== SKILLS ====================-->
-			<section class="skills section" id="skills">
-				<h2 class="section__title">Skills</h2>
-				<span class="section__subtitle">My technical level</span>
-				<div class="skills__container container grid">
-					<div>
-						<!-- ============== SKILLS 1 ============= -->
-						<div class="skills__content skills__close">
-							<div class="skills__header">
-								<i class="uil uil-brackets-curly skills__icon"></i>
-								<div>
-									<h1 class="skills__titles">Frontend stack</h1>
-									<span class="skills__subtitle">More than 2 years</span>
-								</div>
-								<i class="uil uil-angle-down skills__arrow"></i>
-							</div>
-							<div class="skills__list grid">
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">HTML</h3>
-										<span class="skills__number">90%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__html"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">CSS</h3>
-										<span class="skills__number">90%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__css"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">JS</h3>
-										<span class="skills__number">90%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__js"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">React</h3>
-										<span class="skills__number">75%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__react"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">Bootstrap</h3>
-										<span class="skills__number">70%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__bootstrap"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">Figma</h3>
-										<span class="skills__number">85%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__figma"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">Responsive Web Design</h3>
-										<span class="skills__number">80%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__rwd"></span>
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					<div>
-						<!-- ============== SKILLS 2 ============= -->
-						<div class="skills__content skills__close">
-							<div class="skills__header">
-								<i class="uil uil-brackets-curly skills__icon"></i>
-								<div>
-									<h1 class="skills__titles">Backend stack</h1>
-									<span class="skills__subtitle">More than a year</span>
-								</div>
-								<i class="uil uil-angle-down skills__arrow"></i>
-							</div>
-							<div class="skills__list grid">
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">NodeJS</h3>
-										<span class="skills__number">70%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__nodejs"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">MongoDB</h3>
-										<span class="skills__number">60%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__mongodb"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">Linux</h3>
-										<span class="skills__number">70%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__linux"></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<!-- ============== SKILLS 3 ============= -->
-						<div class="skills__content skills__close">
-							<div class="skills__header">
-								<i class="uil uil-brackets-curly skills__icon"></i>
-								<div>
-									<h1 class="skills__titles">Other tools and technologies</h1>
-									<span class="skills__subtitle">Miscellaneous</span>
-								</div>
-								<i class="uil uil-angle-down skills__arrow"></i>
-							</div>
-							<div class="skills__list grid">
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">Docker</h3>
-										<span class="skills__number">60%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__docker"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">Git</h3>
-										<span class="skills__number">60%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__git"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">Jest</h3>
-										<span class="skills__number">65%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__jest"></span>
-									</div>
-								</div>
-								<div class="skills__data">
-									<div class="skills__titles">
-										<h3 class="skills__name">Wordpress</h3>
-										<span class="skills__number">75%</span>
-									</div>
-									<div class="skills__bar">
-										<span class="skills__percentage skills__wp"></span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    .line {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: clamp(0.98rem, 2.7vw, 1.25rem);
+      line-height: 1.7;
+    }
 
-			<!--==================== QUALIFICATION ====================-->
-			<section class="qualification section">
-				<h2 class="section__title">Qualification</h2>
-				<span class="section__subtitle">My personal journey</span>
-				<div class="qualification__container container">
-					<div class="qualification__tabs">
-						<div class="qualification__button button--flex qualification__active" data-target="#education" >
-							<i class="uil uil-graduation-cap qualification__icon"></i>
-							Education
-						</div>
-						<div class="qualification__button button--flex" data-target="#work">
-							<i class="uil uil-briefcase-alt qualification__icon"></i>
-							Experience
-						</div>
-						<div class="qualification__button button--flex" data-target="#extra-curricular">
-							<i class="uil uil-graduation-cap qualification__icon"></i>
-							Extra-curricular
-						</div>
-					</div>
+    .prompt {
+      color: var(--text-dim);
+      margin-right: 10px;
+      user-select: none;
+    }
 
-					<div class="qualification__sections">
-						<!-- ==================== QUALIFICATION CONTENT 1 ===== -->
-						<div
-							class="qualification__content qualification__active"
-							data-content
-							id="education"
-						>
-							<!-- ==================== QUALIFICATION 1 =============== -->
-							<div class="qualification__data">
-								<div>
-									<h3 class="qualification__title">B. Tech in Computer Science & Engineering</h3>
-									<span class="qualification__subtitle">LPU</span>
-									<span class="qualification__subtitle">7.4/10</span>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Aug 2019 - May 2023
-									</div>
-								</div>
-								<div>
-									<span class="qualification__rounder"></span>
-									<span class="qualification__line"></span>
-								</div>
-							</div>
-							<!-- ==================== QUALIFICATION 2 =============== -->
-							<div class="qualification__data">
-								<div></div>
+    #typed {
+      white-space: pre;
+    }
 
-								<div>
-									<span class="qualification__rounder"></span>
-									<span class="qualification__line"></span>
-								</div>
-								<div>
-									<h3 class="qualification__title">Diploma in Full Stack Software Engineering</h3>
-									<span class="qualification__subtitle">NIIT</span>
-									<span class="qualification__subtitle">70%</span>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Mar 2019 - Jul 2019
-									</div>
-								</div>
-							</div>
-							<!-- ==================== QUALIFICATION 3 =============== -->
-							<div class="qualification__data">
-								<div>
-									<h3 class="qualification__title">Intermediate School</h3>
-									<span class="qualification__subtitle">DPS</span>
-									<span class="qualification__subtitle">7.0/10</span>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Apr 2017 - Feb 2019
-									</div>
-								</div>
-								<div>
-									<span class="qualification__rounder"></span>
-									<span class="qualification__line"></span>
-								</div>
-							</div>
-							<!-- ==================== QUALIFICATION 4 =============== -->
-							<div class="qualification__data">
-								<div></div>
+    .cursor {
+      display: inline-block;
+      width: 0.65ch;
+      margin-left: 3px;
+      color: var(--text);
+      transform: translateY(-0.02em);
+      animation: blink 1.1s ease-in-out infinite;
+    }
 
-								<div>
-									<span class="qualification__rounder"></span>
-								</div>
-								<div>
-									<h3 class="qualification__title">High School</h3>
-									<span class="qualification__subtitle">DPS</span>
-									<span class="qualification__subtitle">8.8/10</span>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Apr 2004 - Mar 2017
-									</div>
-								</div>
-							</div>
-						</div>
-						
-						<!-- ==================== QUALIFICATION CONTENT 2 ===== -->
-						<div class="qualification__content" data-content id="work">
-							<!-- ==================== QUALIFICATION 1 =============== -->
-							<div class="qualification__data">
-								
-								<div>
-									<h3 class="qualification__title">Frontend Developer</h3>
-									<span class="qualification__subtitle">Enlight Pvt. Ltd. - Intern</span>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Jul 2022 - Oct 2022
-									</div>
-								</div>
-								<div>
-									<span class="qualification__rounder"></span>
-									<span class="qualification__line"></span>
-								</div>
-							</div>
-							<!-- ==================== QUALIFICATION 2 =============== -->
-							<div class="qualification__data">
-								<div></div>
-								
-								<div>
-									<span class="qualification__rounder"></span>
-								</div>
-								<div>
-									<h3 class="qualification__title">Web Developer</h3>
-									<span class="qualification__subtitle">Freelancer Pvt. Ltd. - Self-employed</span>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Jul 2020 - Dec 2021
-									</div>
-								</div>
-							</div>
-						</div>
+    @keyframes blink {
+      0%,
+      100% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0.08;
+      }
+    }
 
-						<!-- ==================== QUALIFICATION CONTENT 2 ===== -->
-						<div class="qualification__content" data-content id="extra-curricular">
-							<!-- ==================== QUALIFICATION 1 =============== -->
-							<div class="qualification__data">
-								<div>
-									<h3 class="qualification__title">Community Founder</h3>
-									<span class="qualification__subtitle"
-										>The Developer Diaries</span
-									>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Nov 2022 - Present
-									</div>
-								</div>
-								<div>
-									<span class="qualification__rounder"></span>
-									<span class="qualification__line"></span>
-								</div>
-							</div>
-							<!-- ==================== QUALIFICATION 2 =============== -->
-							<div class="qualification__data">
-								<div></div>
+    .hint {
+      margin-top: 18px;
+      font-size: clamp(0.8rem, 2.5vw, 0.86rem);
+      color: #4f9f4f;
+      opacity: 0.9;
+      letter-spacing: 0.02em;
+    }
+  </style>
+</head>
+<body>
+  <main class="terminal" aria-label="Terminal style coming soon page">
+    <div class="terminal__bar" aria-hidden="true">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
 
-								<div>
-									<span class="qualification__rounder"></span>
-									<span class="qualification__line"></span>
-								</div>
-								<div>
-									<h3 class="qualification__title">Video Streamer</h3>
-									<span class="qualification__subtitle">Twitch</span>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Mar 2021 - Present
-									</div>
-								</div>
-							</div>
-							<!-- ==================== QUALIFICATION 3 =============== -->
-							<div class="qualification__data">
-								<div>
-									<h3 class="qualification__title">Technical Lead</h3>
-									<span class="qualification__subtitle">Ignitables, LPU</span>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Sep 2019 - Mar 2020
-									</div>
-								</div>
-								<div>
-									<span class="qualification__rounder"></span>
-									<span class="qualification__line"></span>
-								</div>
-							</div>
-							<!-- ==================== QUALIFICATION 4 =============== -->
-							<div class="qualification__data">
-								<div></div>
+    <section class="terminal__body">
+      <div class="line">
+        <span class="prompt">guest@param.sh:~$</span>
+        <span id="typed"></span><span class="cursor" aria-hidden="true">|</span>
+      </div>
+    </section>
+  </main>
 
-								<div>
-									<span class="qualification__rounder"></span>
-								</div>
-								<div>
-									<h3 class="qualification__title">House Captain</h3>
-									<span class="qualification__subtitle">Ravi House, DPS</span>
-									<div class="qualification__calendar">
-										<i class="uil uil-calendar-alt"></i>
-										Apr 2017 - Mar 2018
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+  <script>
+    (function typeMessage() {
+      const target = document.getElementById("typed");
+      const message = "Coming soon...";
+      let index = 0;
 
-			<!--==================== CONTACT ME ====================-->
-			<section class="contact section" id="contact">
-				<h2 class="section__title">Contact Me</h2>
-				<span class="section__subtitle">Get in touch</span>
-				<div class="contact__container container grid">
-					<div>
-						<div class="contact__information">
-							<i class="uil uil-envelope contact__icon"></i>
-							<div>
-								<h3 class="contact__title">Email</h3>
-								<span class="contact__subtitle">param373r@gmail.com</span>
-							</div>
-						</div>
-						<div class="contact__information">
-							<i class="uil uil-phone contact__icon"></i>
-							<div>
-								<h3 class="contact__title">Location</h3>
-								<span class="contact__subtitle">Jalandhar, Punjab</span>
-							</div>
-						</div>
-					</div>
-					<form action="https://formsubmit.co/bd0150e3d8d7f8afd3279f78b284ee4a" method="POST" class="contact__form grid">
-						<div class="contact__inputs grid">
-							<div class="contact__content">
-								<label for="" class="contact__label"
-									>Name
-									<input type="text" class="contact__input" name="name" placeholder="Joe Mama" required/>
-								</label>
-							</div>
-							<div class="contact__content">
-								<label for="" class="contact__label"
-									>Email
-									<input type="email" class="contact__input" name="email" placeholder="joe.mama@xyz.com" required/>
-								</label>
-							</div>
-							<div class="contact__content">
-								<label for="" class="contact__label"
-									>Message
-									<textarea cols="0" rows="7" class="contact__input" name="message" placeholder="Enter your message here" required></textarea>
-								</label>
-							</div>
-							<div>
-								<button class="button button--flex" style="border: none; cursor: pointer">
-									Send Message
-									<i class="uil uil-message button__icon"></i>
-							</button>
-							</div>
-						</div>
-					</form>
-				</div>
-			</section>
-		</main>
+      const timer = setInterval(() => {
+        target.textContent += message.charAt(index);
+        index += 1;
 
-		<!--==================== FOOTER ====================-->
-		<footer class="footer">
-			<div class="footer__bg">
-				<div class="footer__container container grid">
-					<div>
-						<h1 class="footer__title">param373r</h1>
-						<span class="footer__subtitle">Frontend developer | UI Researcher</span>
-					</div>
-					<ul class="footer__links">
-						<li>
-							<a href="#portfolio" class="footer__link"> Portfolio </a>
-						</li>
-						<li>
-							<a href="#contact" class="footer__link"> Contact </a>
-						</li>
-					</ul>
-					<div class="footer__socials">
-						<a
-							href="https://twitter.com/param373r"
-							target="_blank"
-							class="footer__social"
-						>
-							<i class="uil uil-twitter-alt"></i>
-						</a>
-						<a
-							href="https://instagram.com/param373r"
-							target="_blank"
-							class="footer__social"
-						>
-							<i class="uil uil-instagram"></i>
-						</a>
-					</div>
-				</div>
-				<p class="footer__copy">&copy; param373r. All rights reserved.</p>
-			</div>
-		</footer>
-
-		<!--==================== SCROLL TOP ====================-->
-		<a href="#" class="scrollup" id="scroll-up">
-			<i class="uil uil-arrow-up scrollup__icon"></i>
-		</a>
-
-		<!--==================== MAIN JS ====================-->
-		<script src="assets/js/main.js"></script>
-	</body>
+        if (index >= message.length) {
+          clearInterval(timer);
+        }
+      }, 120);
+    })();
+  </script>
+</body>
 </html>
