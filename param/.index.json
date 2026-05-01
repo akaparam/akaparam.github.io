@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-27T16:23:01.394Z",
+  "generatedAt": "2026-05-01T08:17:21.749Z",
   "sourceExists": true,
   "entries": [
     {
@@ -180,12 +180,13 @@
       "kind": "markdown"
     },
     {
-      "path": "resume.pdf",
+      "path": "resume.lnk",
       "type": "file",
-      "size": 314118,
-      "modified": "2026-04-27T16:10:51.673Z",
-      "ext": ".pdf",
-      "kind": "binary"
+      "size": 33,
+      "modified": "2026-05-01T08:12:49.004Z",
+      "ext": ".lnk",
+      "kind": "binary",
+      "linkTarget": "http://assets.param.sh/resume.pdf"
     },
     {
       "path": "skills.md",
