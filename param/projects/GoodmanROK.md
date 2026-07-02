@@ -2,9 +2,9 @@
 
 GoodmanROK is a Go CLI/TUI for drafting email subjects and bodies with Grok. It is built for quick replies when you do not want to leave the terminal or break focus.
 
-![GoodmanROK TUI](https://github.com/akaparam/goodmanrok/blob/main/docs/assets/tui.png)
+![GoodmanROK TUI](https://github.com/btwparam/goodmanrok/blob/main/docs/assets/tui.png)
 
-![GoodmanROK CLI](https://github.com/akaparam/goodmanrok/blob/main/docs/assets/cli.png)
+![GoodmanROK CLI](https://github.com/btwparam/goodmanrok/blob/main/docs/assets/cli.png)
 
 ## Features
 
@@ -20,4 +20,4 @@ GoodmanROK is a Go CLI/TUI for drafting email subjects and bodies with Grok. It 
   - `<body>`
 - Uses xAI Responses API with `store: false` by default.
 
-**GitHub URL**: https://github.com/akaparam/goodmanrok
+**GitHub URL**: https://github.com/btwparam/goodmanrok

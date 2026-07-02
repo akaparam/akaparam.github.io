@@ -19,4 +19,4 @@ It even includes support for:
 
 Built in .NET 8 with <3
 
-**GitHub URL**: https://github.com/akaparam/ADFit.git
+**GitHub URL**: https://github.com/btwparam/ADFit.git

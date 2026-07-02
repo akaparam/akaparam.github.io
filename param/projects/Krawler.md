@@ -34,4 +34,4 @@ It is a monorepo with the following folder structure:
 - [Deployment & Operations](docs/deployment.md)
 - [Testing](docs/testing.md)
 
-**GitHub URL**: https://github.com/akaparam/krawler.git
+**GitHub URL**: https://github.com/btwparam/krawler.git

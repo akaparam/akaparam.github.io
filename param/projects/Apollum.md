@@ -22,4 +22,4 @@ Built a hospital management system using Spring Boot with a layered architecture
 - **Enum Handling in Persistence**: Stored enums using EnumType.STRING for readability and maintainability.
 
 
-**GitHub URL**: https://github.com/akaparam/apollum.git
+**GitHub URL**: https://github.com/btwparam/apollum.git
